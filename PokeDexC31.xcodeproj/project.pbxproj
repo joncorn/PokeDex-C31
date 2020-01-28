@@ -13,6 +13,7 @@
 		6DAAF91623E0A3750072D03C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DAAF91523E0A3750072D03C /* Assets.xcassets */; };
 		6DAAF91923E0A3750072D03C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DAAF91723E0A3750072D03C /* LaunchScreen.storyboard */; };
 		6DAAF91C23E0A3750072D03C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAF91B23E0A3750072D03C /* main.m */; };
+		6DAAF92A23E0A5120072D03C /* JDCPokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAF92923E0A5120072D03C /* JDCPokemon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		6DAAF91823E0A3750072D03C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DAAF91A23E0A3750072D03C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DAAF91B23E0A3750072D03C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6DAAF92823E0A5120072D03C /* JDCPokemon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDCPokemon.h; sourceTree = "<group>"; };
+		6DAAF92923E0A5120072D03C /* JDCPokemon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDCPokemon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 		6DAAF92323E0A38F0072D03C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6DAAF92823E0A5120072D03C /* JDCPokemon.h */,
+				6DAAF92923E0A5120072D03C /* JDCPokemon.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 		6DAAF8FE23E0A3730072D03C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JDC;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Jon Corn";
 				TargetAttributes = {
@@ -190,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DAAF90B23E0A3730072D03C /* AppDelegate.m in Sources */,
+				6DAAF92A23E0A5120072D03C /* JDCPokemon.m in Sources */,
 				6DAAF91C23E0A3750072D03C /* main.m in Sources */,
 				6DAAF90E23E0A3730072D03C /* SceneDelegate.m in Sources */,
 			);
@@ -332,7 +339,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PokeDexC31/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PokeDexC31/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -348,7 +355,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PokeDexC31/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PokeDexC31/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
