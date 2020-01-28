@@ -30,6 +30,7 @@
 
 - (instancetype) initWithDictionary:(NSDictionary<NSString *,id> *)dictionary
 {
+    // Creating new properties with json data from top level dicitonary
     NSString *name = dictionary[@"name"];
     NSInteger identifier = [dictionary[@"id"] integerValue];
     NSArray *abilitiesArray = dictionary[@"abilities"];
@@ -43,14 +44,18 @@
     // for loop to pull ou abilities name
     for (NSDictionary *dictionary in abilitiesArray)
     {
+        // going to first level dictionary...
         NSDictionary *abilityDictrionary = dictionary[@"ability"];
+        // to pull out ability name string
         NSString *abilityName = abilityDictrionary[@"name"];
         if (!abilityName)
         {
             continue;
         }
+        // appending the value of the name to our placeholder array
         [abilities addObject:abilityName];
     }
+    // returning our finished pokemon using the initializer we created
     return [self initWithName:name identifier:identifier abilities:abilities];
 }
 
