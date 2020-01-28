@@ -35,7 +35,7 @@ class JDCPokemonViewController: UIViewController {
         DispatchQueue.main.async {
             self.nameLabel.text = pokemon.name
             self.IDLabel.text = "\(pokemon.identifier)"
-            self.abilitiesLabel.text = "\(pokemon.abilities)"
+            self.abilitiesLabel.text = "\(pokemon.abilities.joined(separator: ", "))"
         }
     }
 }
